@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态文件</title>
+</head>
+<body>
+<img src="/static/image/100.png" width="500px" height="500px">
+{% load static %}
+<img src="{% static 'image/100.png' %}" width="500px" height="500px">
+</body>
+</html>

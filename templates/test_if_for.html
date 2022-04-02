@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习if标签</title>
+</head>
+<body>
+<h3>
+    {% if x > 100 %}
+        今天天气很好
+    {% else %}
+        今天天气很差
+    {% endif %}
+</h3>
+<h3>
+    {% for name in list %}
+        {% if forloop.first %}这是我第一次循环通过{% endif %}
+        <p>{{forloop.counter}} {{name}}</p>
+        {% if forloop.last %}这是我最后一次循环通过{% endif %}
+
+    {% empty %}
+        "这是循环为空的值"
+    {% endfor %}
+</h3>
+</body>
+</html>

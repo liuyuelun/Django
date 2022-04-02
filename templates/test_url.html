@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对地址</title>
+</head>
+<body>
+<h3><a href="http://10.40.66.154:8000/test_url_result">绝对地址</a></h3>
+<h3><a href="/test_url_result/1">带"/"相对地址</a></h3>
+<h3><a href="test_url_result/1">不带"/"相对地址</a></h3>
+<h3><a href="{% url 'tr' '100' %}">url 反向解析</a></h3>
+
+</body>
+</html>

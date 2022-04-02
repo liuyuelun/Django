@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template传参</title>
+</head>
+<body>
+<h3>int 的值是： {{int | add:"333"}}</h3>
+<h3>str 的值是： {{str | upper}}</h3>
+<h3>list[0] 的值是： {{list.0}}</h3>
+<h3>dict 的值是： {{dict}}</h3>
+<h3>function 的值是： {{func}}</h3>
+<h3>class_job对象调用say函数的值是： {{class_job.say}}</h3>
+<h3> script的进行html转义后的值是： {{script}} </h3>
+<h3> script的不进行html转义的值是： {{script | safe}} </h3>
+</body>
+</html>
