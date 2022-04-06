@@ -15,7 +15,7 @@
         <th>op</th>
     </tr>
     <tr>
-        {% for book in all_book %}}
+        {% for book in all_book %}
             <tr>
                 <td>{{ book.id }}</td>
                 <td>{{ book.title }}</td>
@@ -23,7 +23,7 @@
                 <td>{{ book.price }}</td>
                 <td>{{ book.market_price }}</td>
                 <td>
-                    <a href="">更新</a>
+                    <a href="/bookstore/update_book/{{ book.id }}">更新</a>
                     <a href="">删除</a>
                 </td>
             </tr>
